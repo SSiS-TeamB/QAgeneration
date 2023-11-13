@@ -1,0 +1,10 @@
+### result models
+/BM-K
+/da_finetune_epoch_2
+/da_finetune_epoch_25
+
+#util
+/markdownDB
+/resultQA
+/result.json
+/settings.py
