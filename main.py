@@ -1,7 +1,7 @@
 """ Dataset generation Example usage """
 
-from document import BaseDBLoader
-from qa_generation import generate_qa 
+from utility.document import BaseDBLoader
+from utility.qa_generation import generate_qa 
 import os
 import json
 import random
@@ -59,7 +59,7 @@ os.chdir(directory)
 #         for key in batch_dict.keys() :
 #             merged_batch_dataset[key].update(batch_dict[key])
 
-# with open('./da_qa_dataset.json', 'w+', encoding='utf-8') as da_qa_dataset :
+# with open('./da_dataset/da_qa_dataset.json', 'w+', encoding='utf-8') as da_qa_dataset :
 #     json.dump(merged_batch_dataset, da_qa_dataset, indent='\t', ensure_ascii=False)
     
 #### dataset split (train - validation)
@@ -91,9 +91,9 @@ os.chdir(directory)
 
 # print(train_data)
 
-# with open('./da_train_dataset.json', 'w+', encoding='utf-8') as train :
+# with open('./da_dataset/da_train_dataset.json', 'w+', encoding='utf-8') as train :
 #     json.dump(train_data, train, indent='\t', ensure_ascii=False)
 
-# with open('./da_val_dataset.json', 'w+', encoding='utf-8') as val :
+# with open('./da_dataset/da_val_dataset.json', 'w+', encoding='utf-8') as val :
 #     json.dump(val_data, val, indent='\t', ensure_ascii=False)
 
